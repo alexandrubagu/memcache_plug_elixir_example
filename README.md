@@ -5,7 +5,7 @@
 
 ## Benchmark
 
-alexandru.bagu$ wrk -t10 -c10000 --latency http://localhost:8080/get
+```alexandru.bagu$ wrk -t10 -c10000 --latency http://localhost:8080/get
 Running 10s test @ http://localhost:8080/get
   10 threads and 10000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
@@ -19,5 +19,5 @@ Running 10s test @ http://localhost:8080/get
   206742 requests in 10.10s, 39.86MB read
   Socket errors: connect 9759, read 8799, write 3, timeout 0
 Requests/sec:  20476.96
-Transfer/sec:      3.95MB
+Transfer/sec:      3.95MB```
 
