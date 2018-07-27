@@ -1,0 +1,10 @@
+{application,plug_memcache_example,
+             [{applications,[kernel,stdlib,elixir,logger,memcachex,cowboy,
+                             plug,jason]},
+              {description,"plug_memcache_example"},
+              {modules,['Elixir.PlugMemcacheExample.Application',
+                        'Elixir.PlugMemcacheExample.Web','Elixir.Server']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger,memcachex,cowboy,plug]},
+              {mod,{'Elixir.PlugMemcacheExample.Application',[]}}]}.
