@@ -6,19 +6,19 @@
 ## Benchmark
 
 ```
-alexandru.bagu$ wrk -t10 -c10000 --latency http://localhost:8080/get
+alexandru.bagu$ wrk -c 10000 -t 4 --latency http://localhost:8080/get
 Running 10s test @ http://localhost:8080/get
-  10 threads and 10000 connections
+  4 threads and 10000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    10.97ms    7.85ms 115.64ms   84.50%
-    Req/Sec     2.08k   768.34     5.86k    72.22%
+    Latency     9.38ms    5.62ms 109.09ms   83.57%
+    Req/Sec     6.05k     1.43k   11.32k    67.25%
   Latency Distribution
-     50%    9.21ms
-     75%   13.16ms
-     90%   18.82ms
-     99%   43.18ms
-  206742 requests in 10.10s, 39.86MB read
-  Socket errors: connect 9759, read 8799, write 3, timeout 0
-Requests/sec:  20476.96
-Transfer/sec:      3.95MB
+     50%    8.48ms
+     75%   11.17ms
+     90%   14.67ms
+     99%   30.66ms
+  241099 requests in 10.04s, 46.49MB read
+  Socket errors: connect 9753, read 13447, write 0, timeout 0
+Requests/sec:  24002.74
+Transfer/sec:      4.63MB
 ```
